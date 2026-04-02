@@ -1,0 +1,19 @@
+# Built and IDE
+*.iml
+.idea/
+.gradle/
+/build
+**/build
+/captures
+.kotlin/
+
+# Local config (machine-specific)
+local.properties
+
+# Signing and keys
+*.jks
+*.keystore
+
+# OS
+.DS_Store
+Thumbs.db

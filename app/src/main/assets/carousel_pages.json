@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "gallery",
+    "itemCount": 25,
+    "tags": ["apple", "banana", "orange", "blueberry"]
+  },
+  {
+    "icon": "camera",
+    "itemCount": 30,
+    "tags": ["cherry", "grape", "melon", "strawberry"]
+  },
+  {
+    "icon": "compass",
+    "itemCount": 20,
+    "tags": ["kiwi", "lemon", "mango", "pineapple"]
+  },
+  {
+    "icon": "edit",
+    "itemCount": 15,
+    "tags": ["peach", "plum", "pear", "watermelon"]
+  },
+  {
+    "icon": "map",
+    "itemCount": 28,
+    "tags": ["apricot", "coconut", "papaya", "guava"]
+  }
+]
