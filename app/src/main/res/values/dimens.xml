@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spacing_5xs">2dp</dimen>
+    <dimen name="spacing_4xs">4dp</dimen>
+    <dimen name="spacing_xs">8dp</dimen>
+    <dimen name="spacing_sm">12dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+
+    <dimen name="spacing_fab_offset">90dp</dimen>
+    <dimen name="indicator_dot_size">8dp</dimen>
+    <dimen name="indicator_dot_margin">4dp</dimen>
+    <dimen name="carousel_height">180dp</dimen>
+    <dimen name="list_thumbnail_size">36dp</dimen>
+    <dimen name="text_size_list_title">16sp</dimen>
+    <dimen name="text_size_list_subtitle">13sp</dimen>
+    <dimen name="text_size_stat_title">16sp</dimen>
+    <dimen name="text_size_stat_body">14sp</dimen>
+    <dimen name="text_size_bottom_sheet_title">20sp</dimen>
+    <dimen name="screen_state_content_padding">24dp</dimen>
+
+</resources>

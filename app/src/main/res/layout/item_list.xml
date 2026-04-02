@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/spacing_sm"
+    android:paddingVertical="@dimen/spacing_xs">
+
+    <ImageView
+        android:id="@+id/imageViewThumbnail"
+        android:layout_width="@dimen/list_thumbnail_size"
+        android:layout_height="@dimen/list_thumbnail_size"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_sm"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/text_size_list_title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageViewThumbnail"
+        app:layout_constraintTop_toTopOf="@id/imageViewThumbnail"
+        tools:text="Item Title" />
+
+    <TextView
+        android:id="@+id/textViewSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4xs"
+        android:textColor="@color/textSecondary"
+        android:textSize="@dimen/text_size_list_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textViewTitle"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        tools:text="Item subtitle goes here" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

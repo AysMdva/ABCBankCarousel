@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ABCBankCarousel</string>
+    <string name="search_hint">Search by title or subtitle</string>
+    <string name="statistics">Statistics</string>
+    <string name="page_label">List %1$d</string>
+    <string name="character_count_format">%1$s = %2$d</string>
+    <string name="statistics_separator">, </string>
+    <string name="carousel_load_error">Unable to load carousel data.</string>
+    <string name="carousel_error_title">Unable to load data</string>
+    <string name="carousel_error_message">Please try again.</string>
+    <string name="carousel_empty_title">No items available</string>
+    <string name="carousel_empty_message">The local data source returned no pages.</string>
+    <string name="carousel_no_results_title">No matching results</string>
+    <string name="carousel_no_results_message">Try a different search term.</string>
+    <string name="retry">Retry</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.xml.CarouselXmlActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surfaceGray">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerCarousel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed" />
+
+        <LinearLayout
+            android:id="@+id/layoutPageIndicators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/spacing_md"
+            android:paddingBottom="@dimen/spacing_md" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_md"
+            android:layout_marginBottom="@dimen/spacing_sm"
+            android:hint="@string/search_hint"
+            app:layout_scrollFlags="snap">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/spacing_sm"
+        android:paddingBottom="@dimen/spacing_fab_offset"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_list" />
+
+    <FrameLayout
+        android:id="@+id/layoutContentState"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ProgressBar
+            android:id="@+id/progressBarState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/layoutStateMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_state_content_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textStateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                tools:text="No matching results" />
+
+            <TextView
+                android:id="@+id/textStateMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:textColor="@color/textSecondary"
+                tools:text="Try a different search term." />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm"
+                android:text="@string/retry"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/spacing_md"
+        android:backgroundTint="@color/material_dynamic_neutral100"
+        android:contentDescription="@string/statistics"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
